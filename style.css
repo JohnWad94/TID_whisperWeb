@@ -106,7 +106,7 @@ p {
 }
 
 .chatInput {
-    width: calc(100% - 40px); /* Set the width to be 100% minus padding */
+    width: calc(100% - 40px); 
     padding: 10px;
     margin: 20px;
     border: 2px solid black;
@@ -117,6 +117,8 @@ p {
     font-family: "Fira sans", sans-serif;
     font-size: 14px;
 	text-align: center;
+	position: fixed;
+    bottom: 0;
 }
 
 .message {
