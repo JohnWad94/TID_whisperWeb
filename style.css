@@ -1,7 +1,7 @@
 :root {
 	--dark: #200E32;
 	--light: #ffffff;
-	--gradient: linear-gradient(-20deg, #42DE95 20%, #4CF2D7 40%, #3FC9DE 70%);
+	--gradient: linear-gradient(-100deg, #42DE95 20%, #4CF2D7 40%, #3FC9DE 70%);
 }
 
 * {
@@ -100,9 +100,10 @@ p {
     border: 2px solid black;
     margin: 20px;
     padding: 20px;
-    border-radius: 5px;
-    height: 300%;
+    border-radius: 20px;
+    height: 62vh; /* Set the height to 70% of the viewport height */
     max-height: none;
+    overflow-y: auto; /* Add a scrollbar if the content overflows */
 }
 
 .chatInput {
@@ -110,7 +111,7 @@ p {
     padding: 10px;
     margin: 20px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
     background-color: var(--light);
     color: var(--dark);
@@ -148,7 +149,6 @@ p {
     font-size: 14px;
     color: var(--dark);
 }
-
 
 .bottom-nav {
     display: flex;
