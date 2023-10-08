@@ -1,6 +1,5 @@
 :root {
 	--dark: #200E32;
-	--subtle:#8C8CA1;
 	--light: #ffffff;
 	--gradient: linear-gradient(-20deg, #42DE95 20%, #4CF2D7 40%, #3FC9DE 70%);
 }
@@ -14,8 +13,9 @@
 body {
 	display: flex;
 	flex-direction: column;
-	min-height: 86vh;
-	background: var(--gradient)}
+	min-height: 100vh;
+	background: var(--gradient)
+}
 
 header {
 	padding-top: 10%;
@@ -27,7 +27,7 @@ header {
 
 }
 
-header h1{ 
+header h1 { 
 	color: var(--dark);
 	font-family: arial;
 	font-size: 34px;
@@ -37,11 +37,12 @@ header h1{
 	letter-spacing: -0.68px;
 	font-weight: bold;
 }
-h1{
+
+h1 {
 	text-align: start;
 }
 
-main h1{ 
+main h1 { 
 	color: var(--dark);
 	font-family: arial;
 	font-size: 20px;
@@ -53,11 +54,11 @@ main h1{
 	padding-bottom: 2%;
 }
 
-h2{
+h2 {
 	text-align: start;
 }
 
-p{ 
+p { 
 	font-family: arial;
 	font-style: normal;
 	line-height: normal;
@@ -72,18 +73,7 @@ p{
 .grey-text {
 	font-size: 14px;
 	color: grey;
-}
-
-.subtleText{ 
-	color: var(--subtle);
-	font-family: arial;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: -0.68px;
-	font-weight: bold;
-}
+}  
 
 .chatBox {
 	background-color: var(--light);
@@ -92,7 +82,71 @@ p{
 	margin: 20px;
 	padding: 20px;
 	border-radius: 5px;
-  }
+}
+
+.centeredTitle {
+    text-align: center; /* Center the text */
+    color: var(--dark);
+    font-family: arial;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.68px;
+}
+
+.chatWindow {
+    background-color: #EEF2F5;
+    color: var(--dark);
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    height: 300%;
+    max-height: none;
+}
+
+.chatInput {
+    width: calc(100% - 40px); /* Set the width to be 100% minus padding */
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: "Fira sans", sans-serif;
+    font-size: 14px;
+	text-align: center;
+}
+
+.message {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Make the message boxes inline */
+    width: auto; /* Allow the width to adjust based on content */
+    max-width: 70%; /* Set a maximum width to avoid filling the entire width */
+}
+.user1 {
+    text-align: start;
+	background-color: var(--light);
+}
+
+.user2 {
+    text-align: end;
+	background: var(--gradient);
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.text {
+    font-size: 14px;
+    color: var(--dark);
+}
+
 
 .bottom-nav {
     display: flex;
@@ -123,7 +177,7 @@ p{
 }
 
 .nav-icon {
-    width: 70px; /* Adjust the width and height according to your image size */
+    width: 70px; 
     height: 70px;
-    margin-bottom: 0px; /* Adjust the margin to separate the image and text */
+    margin-bottom: 0px; 
 }
