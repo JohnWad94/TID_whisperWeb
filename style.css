@@ -95,15 +95,42 @@ p {
 }
 
 .chatWindow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    padding: 15px;
     background-color: #EEF2F5;
     color: var(--dark);
     border: 2px solid black;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
-    height: 62vh; /* Set the height to 70% of the viewport height */
-    max-height: none;
     overflow-y: auto; /* Add a scrollbar if the content overflows */
+}
+
+.message {
+    margin: 0 15px 20px;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 15px;
+    width: auto;
+    min-width:1vw;
+    max-width: 80%;
+}
+.message.to {
+    background-color: var(--gradient);
+    color: var(--dark);
+    margin-left: auto;
+    text-align: right;
+    white-space: pre-wrap;
+    border-radius: 10px 10px 0px 10px;
+}
+.message.from {
+    background-color: #e5e4e9;
+    color: var(--dark);
+    margin-right: auto;
+    border-radius: 10px 10px 10px 0px;
 }
 
 .chatInput {
@@ -120,29 +147,6 @@ p {
 	text-align: center;
 	position: fixed;
     bottom: 0;
-}
-
-.message {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: inline-block; /* Make the message boxes inline */
-    width: auto; /* Allow the width to adjust based on content */
-    max-width: 70%; /* Set a maximum width to avoid filling the entire width */
-}
-.user1 {
-    text-align: start;
-	background-color: var(--light);
-}
-
-.user2 {
-    text-align: end;
-	background: var(--gradient);
-}
-
-.username {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--dark);
 }
 
 .text {
