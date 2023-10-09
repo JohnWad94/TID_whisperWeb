@@ -88,7 +88,7 @@ p {
     text-align: center; /* Center the text */
     color: var(--dark);
     font-family: arial;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 18px; /* Adjust the font size as needed */
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.68px;
@@ -107,6 +107,7 @@ p {
     padding: 20px;
     border-radius: 20px;
     overflow-y: auto; /* Add a scrollbar if the content overflows */
+    min-height: 70vh;
 }
 
 .message {
@@ -119,7 +120,7 @@ p {
     max-width: 80%;
 }
 .message.to {
-    background-color: var(--gradient);
+    background-color: rgba(0, 0, 255, 0.491);
     color: var(--dark);
     margin-left: auto;
     text-align: right;
@@ -147,11 +148,6 @@ p {
 	text-align: center;
 	position: fixed;
     bottom: 0;
-}
-
-.text {
-    font-size: 14px;
-    color: var(--dark);
 }
 
 .bottom-nav {
