@@ -1,4 +1,4 @@
-# WhisperWeb: The Safe Space for Sensitive Topics
+# WhisperWeb: Your Safe Space for Sensitive Topics on Campus
 ## TID Course Project
 
 ## Product Description
