@@ -194,7 +194,7 @@ p {
     background-color: rgba(0, 0, 255, 0.491);
     color: var(--dark);
     margin-left: auto;
-    text-align: right;
+    text-align: left;
     white-space: pre-wrap;
     border-radius: 10px 10px 0px 10px;
 }
