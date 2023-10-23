@@ -148,6 +148,14 @@ p {
 
 }
 
+.active {
+    /* Styles for the active state go here */
+    }
+    
+.inactive {
+/* Styles for the inactive state go here */
+}
+    
 /* button that contains topics on New-Chat Page */
 .topicButton {
     border-radius: 40px;
@@ -253,16 +261,4 @@ p {
     width: 70px; 
     height: 70px;
     margin-bottom: 0px; 
-}
-
-.button {
-    /* Your generic button styles go here */
-  }
-  
-.active {
-/* Styles for the active state go here */
-}
-
-.inactive {
-/* Styles for the inactive state go here */
 }
